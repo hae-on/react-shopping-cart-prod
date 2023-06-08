@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import OrderProductItem from './OrderProductItem';
-import { SM } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 import { ORDER_DETAILS_ROUTES } from '../../constants/routes';
 import type { OrderedProduct } from '../../types/product';
 
@@ -61,7 +61,7 @@ const OrderId = styled.span`
 `;
 
 const OrderDataTime = styled.span`
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     display: none;
   }
 `;

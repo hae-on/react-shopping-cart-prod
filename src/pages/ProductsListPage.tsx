@@ -4,7 +4,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import Message from '../components/Common/InformativeMessage';
 import ContentListSkeleton from '../components/Common/ContentListSkeleton';
 import ProductList from '../components/Product/ProductList';
-import { XL } from '../constants/screenSizes';
+import { breakpoint } from '../constants/screenSizes';
 
 const ProductsListPage = () => {
   return (
@@ -21,7 +21,7 @@ const ProductsListPage = () => {
 };
 
 const Main = styled.main`
-  max-width: ${XL};
+  max-width: ${breakpoint.XL};
   margin: 60px auto 0;
   padding: 0 0 100px 0;
 `;

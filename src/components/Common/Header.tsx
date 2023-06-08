@@ -5,7 +5,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { totalCartProductSelect } from '../../recoil/cartProductData';
 import { hostNameAtom } from '../../recoil/hostData';
 import { servers } from '../../constants/server';
-import { SM, XL, XS } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 import {
   CART_PRODUCTS_ROUTES,
   HOME_ROUTES,
@@ -62,7 +62,7 @@ const HeaderContainer = styled.header`
 `;
 
 const HeaderContent = styled.div`
-  max-width: ${XL};
+  max-width: ${breakpoint.XL};
   height: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -87,7 +87,7 @@ const Logo = styled.h1`
   letter-spacing: 0.1em;
   padding: 10px 0 0;
 
-  @media (max-width: ${XS}) {
+  @media (max-width: ${breakpoint.XS}) {
     display: none;
   }
 `;
@@ -96,7 +96,7 @@ const ControlContainer = styled.div`
   display: flex;
   gap: 30px;
 
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     gap: 15px;
   }
 `;
@@ -121,7 +121,7 @@ const MoveOrderListPageBtn = styled.button`
 const DesktopLabel = styled.span`
   display: inline;
 
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     display: none;
   }
 `;
@@ -129,7 +129,7 @@ const DesktopLabel = styled.span`
 const MobileLabel = styled.span`
   display: none;
 
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     display: inline;
   }
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SM } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 interface PaymentInfoBoxProps {
   totalPrice: number;
@@ -24,7 +24,7 @@ const PaymentInfoBoxContainer = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.gray400};
   float: right;
 
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     width: 100%;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import usePoint from '../../hooks/usePoint';
 import useEstimatedPayment from '../../hooks/useEstimatedPayment';
-import { XS } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 const UserPointInfo = () => {
   const { userPoint, minUsagePoint, handleUserUsedPointUpdate } = usePoint();
@@ -71,7 +71,7 @@ const UserPointInfoContainer = styled.div`
   height: 220px;
   margin-bottom: 40px;
 
-  @media (max-width: ${XS}) {
+  @media (max-width: ${breakpoint.XS}) {
     width: 330px;
   }
 `;

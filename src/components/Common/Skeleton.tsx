@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { XS } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 interface SkeletonProps {
   content: 'product' | 'cart';
@@ -30,7 +30,7 @@ const ImageStyled = {
     background-image: linear-gradient(90deg, #aaa 25%, #f0f0f0 50%, #aaa 75%);
     background-size: 300% 100%;
 
-    @media (max-width: ${XS}) {
+    @media (max-width: ${breakpoint.XS}) {
       width: 80px;
       height: 80px;
     }
@@ -78,7 +78,7 @@ const TextStyled = {
     background-image: linear-gradient(90deg, #aaa 25%, #f0f0f0 50%, #aaa 75%);
     background-size: 300% 100%;
 
-    @media (max-width: ${XS}) {
+    @media (max-width: ${breakpoint.XS}) {
       width: 80px;
       height: 80px;
     }

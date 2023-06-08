@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Button from '../Common/Button';
 import useEstimatedPayment from '../../hooks/useEstimatedPayment';
-import { XS } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 interface EstimatedPaymentBoxProps {
   usePoint: number;
@@ -57,7 +57,7 @@ const EstimatedPaymentBoxContainer = styled.div`
   height: 480px;
   border: 1px solid ${({ theme }) => theme.colors.gray100};
 
-  @media (max-width: ${XS}) {
+  @media (max-width: ${breakpoint.XS}) {
     width: 330px;
     height: 492px;
   }

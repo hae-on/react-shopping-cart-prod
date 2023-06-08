@@ -12,7 +12,7 @@ import UserPointInfo from '../components/Cart/UserPointInfo';
 import Title from '../components/Common/Title';
 import useCheckedProducts from '../hooks/useCheckedProducts';
 import usePoint from '../hooks/usePoint';
-import { LG, XL } from '../constants/screenSizes';
+import { breakpoint } from '../constants/screenSizes';
 
 const CartProductsListPage = () => {
   const totalCartProductCount = useRecoilValue(totalCartProductSelect);
@@ -60,7 +60,7 @@ const Main = styled.main`
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: ${XL};
+  max-width: ${breakpoint.XL};
   margin: 0 auto;
   padding: 0 0 100px 0;
   overflow-y: auto;
@@ -69,7 +69,7 @@ const Main = styled.main`
     display: none;
   }
 
-  @media (max-width: ${LG}) {
+  @media (max-width: ${breakpoint.LG}) {
     flex-direction: column;
     margin: 0 20px;
   }
@@ -109,7 +109,7 @@ const PaymentBoxWrapper = styled.div`
   top: 30px;
   margin-top: 170px;
 
-  @media (max-width: ${LG}) {
+  @media (max-width: ${breakpoint.LG}) {
     position: static;
     display: flex;
     align-items: center;

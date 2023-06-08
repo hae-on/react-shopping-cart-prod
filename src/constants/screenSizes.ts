@@ -1,5 +1,7 @@
-export const XS = '420px';
-export const SM = '640px';
-export const MD = '768px';
-export const LG = '1100px';
-export const XL = '1300px';
+export const breakpoint = {
+  XS: '420px',
+  SM: '640px',
+  MD: '768px',
+  LG: '1100px',
+  XL: '1300px',
+};

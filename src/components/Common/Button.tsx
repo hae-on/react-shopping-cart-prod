@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { ButtonHTMLAttributes } from 'react';
-import { XS } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   designType: 'delete' | 'order';
@@ -31,7 +31,7 @@ const buttonStyles = {
     background-color: ${({ theme }) => theme.colors.black};
     color: ${({ theme }) => theme.colors.white};
 
-    @media (max-width: ${XS}) {
+    @media (max-width: ${breakpoint.XS}) {
       width: 270px;
       height: 50px;
       font-size: 18px;

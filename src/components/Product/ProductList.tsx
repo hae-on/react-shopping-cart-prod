@@ -3,7 +3,7 @@ import { useRecoilValue } from 'recoil';
 import { fetchProductsSelector } from '../../recoil/productData';
 import ProductItem from './ProductItem';
 import Message from '../Common/InformativeMessage';
-import { MD, SM } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 const ProductList = () => {
   const products = useRecoilValue(fetchProductsSelector);
@@ -28,11 +28,11 @@ const ProductListContainer = styled.ul`
   grid-row-gap: 84px;
   grid-column-gap: 48px;
 
-  @media (min-width: ${SM}) and (max-width: ${MD}) {
+  @media (min-width: ${breakpoint.SM}) and (max-width: ${breakpoint.MD}) {
     grid-template-columns: repeat(2, 282px);
   }
 
-  @media (max-width: ${SM}) {
+  @media (max-width: ${breakpoint.SM}) {
     grid-template-columns: repeat(1, 282px);
   }
 `;

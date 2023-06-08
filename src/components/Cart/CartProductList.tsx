@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import CartProductItem from './CartProductItem';
 import { useRecoilValue } from 'recoil';
 import { cartProductAtom } from '../../recoil/cartProductData';
-import { LG } from '../../constants/screenSizes';
+import { breakpoint } from '../../constants/screenSizes';
 
 const CartProductList = () => {
   const cartProducts = useRecoilValue(cartProductAtom);
@@ -36,7 +36,7 @@ const CartProductListContainer = styled.ul`
     border-top: 1px solid ${({ theme }) => theme.colors.gray200};
   }
 
-  @media (max-width: ${LG}) {
+  @media (max-width: ${breakpoint.LG}) {
     width: 100%;
   }
 `;
