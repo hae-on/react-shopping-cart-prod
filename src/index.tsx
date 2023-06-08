@@ -21,6 +21,8 @@ const main = async () => {
   });
 };
 
+main();
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -34,5 +36,3 @@ root.render(
     </RecoilRoot>
   </React.StrictMode>
 );
-
-main();
