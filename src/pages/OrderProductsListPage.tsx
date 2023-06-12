@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useRecoilValue } from 'recoil';
-import { hostNameAtom, orderApiAtom } from '../recoil/hostData';
+import { orderApiAtom } from '../recoil/hostData';
 import OrderProductList from '../components/Order/OrderProductList';
 import Title from '../components/Common/Title';
 import { breakpoint } from '../constants/screenSizes';
 import type { OrderedProduct } from '../types/product';
 
 const OrderProductsListPage = () => {
-  const hostName = useRecoilValue(hostNameAtom);
   const orderApiInstance = useRecoilValue(orderApiAtom);
   const [orders, setOrders] = useState<OrderedProduct[]>([]);
 
@@ -16,7 +15,7 @@ const OrderProductsListPage = () => {
     orderApiInstance.fetchOrderProducts().then((data) => {
       setOrders(data);
     });
-  }, [hostName]);
+  }, [orderApiInstance, setOrders]);
 
   return (
     <Main>
