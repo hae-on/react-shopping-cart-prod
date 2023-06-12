@@ -7,7 +7,7 @@
 
 - 상품 목록
 
-  <img width="416" alt="스크린샷 2023-06-05 오후 2 46 27" src="https://github.com/hae-on/woowacourse/assets/80464961/479f3598-961a-46e3-bce9-dedc1b0630ee">
+  <img  alt="스크린샷 2023-06-05 오후 2 46 27" src="https://github.com/hae-on/woowacourse/assets/80464961/479f3598-961a-46e3-bce9-dedc1b0630ee">
 
 - 장바구니
 
