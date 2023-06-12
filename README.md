@@ -11,15 +11,15 @@
 
 - 장바구니
 
-  <img width="416" alt="스크린샷 2023-06-05 오후 2 46 16" src="https://github.com/hae-on/woowacourse/assets/80464961/37fd9d55-c119-4734-9aee-e28f61e37fe0">
+  <img  alt="스크린샷 2023-06-05 오후 2 46 16" src="https://github.com/hae-on/woowacourse/assets/80464961/37fd9d55-c119-4734-9aee-e28f61e37fe0">
 
 - 주문 목록
 
-  <img width="416" alt="스크린샷 2023-06-05 오후 2 46 46" src="https://github.com/hae-on/woowacourse/assets/80464961/e82511ea-37d6-4863-b471-2aed52de0f6e">
+  <img  alt="스크린샷 2023-06-05 오후 2 46 46" src="https://github.com/hae-on/woowacourse/assets/80464961/e82511ea-37d6-4863-b471-2aed52de0f6e">
 
 - 주문 상세
 
-  <img width="416" alt="스크린샷 2023-06-05 오후 2 46 52" src="https://github.com/hae-on/woowacourse/assets/80464961/da91e80e-d02a-467d-ba76-693794762336">
+  <img  alt="스크린샷 2023-06-05 오후 2 46 52" src="https://github.com/hae-on/woowacourse/assets/80464961/da91e80e-d02a-467d-ba76-693794762336">
 
 <br />
 
